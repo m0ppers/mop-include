@@ -8,4 +8,4 @@ main.html:
 
 test.html:
 
-    <div>{{ values.test }}</div>
+    <div>{{ test }}</div>
