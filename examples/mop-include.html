@@ -23,6 +23,7 @@ function MainController($scope) {
 <body ng-app="mopInclude" ng-controller="MainController">
 Example
 <mop-include src="url" values="{'hund': hund()}"></mop-include>
+<div mop-include="url" values="{'hund': hund()}"></div>
 <button ng-click="daHund='katze'">katze</button>
 <button ng-click="url='wurst.html'">wurst</button>
 </body>
