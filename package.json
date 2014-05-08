@@ -1,0 +1,13 @@
+{
+  "name": "mop-include",
+  "version": "0.0.1",
+  "description": "",
+  "main": "gulpfile.js",
+  "author": "Andreas Streichardt <andreas.streichardt@gmail.com>",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "gulp": "~3.6.2",
+    "gulp-uglify": "~0.2.1",
+    "gulp-concat": "~2.2.0"
+  }
+}

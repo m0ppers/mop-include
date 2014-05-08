@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="../mop-include.js"></script>
+<script type="text/javascript">
+function MainController($scope) {
+    console.log("HIHI");
+    $scope.url = "test.html";
+    
+    $scope.daHund = "HUND";
+    $scope.hund = function() {
+        return $scope.daHund;
+    }
+    
+    // mop: ng-include events still work :S
+    $scope.$on("$includeContentRequested", function() {
+        console.log("REQUEST", arguments);
+    });
+}
+</script>
+</head>
+<body ng-app="mopInclude" ng-controller="MainController">
+Example
+<mop-include src="url" values="{'hund': hund()}"></mop-include>
+<button ng-click="daHund='katze'">katze</button>
+<button ng-click="url='wurst.html'">wurst</button>
+</body>
+</html>
